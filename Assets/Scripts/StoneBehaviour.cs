@@ -6,19 +6,20 @@ public class StoneBehaviour : MonoBehaviour
 	public LayerMask acceptableLayers;
 	public GameObject destroyedGo;
 	public float damage = 1;
-	public float speed = 10; 
+	public float speed = 1;
+    public float gravity = 2f;
+    private void Start()
+    {
+        speed = 10; gravity = 2f;
+    }
 
-	/*
-	void Update()
-	{
-		transform.Translate(transform.forward * speed * Time.deltaTime,Space.World);
-	}
-	*/
 
-	void FixedUpdate()
+    void FixedUpdate()
 	{
-		transform.Translate(transform.forward * speed * Time.deltaTime,Space.World);
-	}
+        transform.Translate(transform.forward * speed * Time.deltaTime,Space.World);
+        transform.Translate(transform.up * -gravity * Time.deltaTime, Space.World);
+        gravity *= 1.05f;
+    }
 
 	void OnTriggerEnter(Collider other) 
 	{	
@@ -38,5 +39,5 @@ public class StoneBehaviour : MonoBehaviour
 			Destroy(Instantiate(destroyedGo,transform.position, Quaternion.identity),1);
 		}
 	}
-
+   
 }

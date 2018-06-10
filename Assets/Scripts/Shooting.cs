@@ -32,7 +32,7 @@ public class Shooting : MonoBehaviour {
 		{
 			if (Input.GetButtonDown ("Fire2"))
 			{
-				if (inventory.RemoveItem(projectileInventoryItem))
+                if (inventory.RemoveItem(projectileInventoryItem))
 			   		Shoot();
 				else if (!messageShown)
 					StartCoroutine(ShowInfoText());
@@ -40,10 +40,10 @@ public class Shooting : MonoBehaviour {
 		}
 	}
 
-	void Shoot()
+	private void Shoot()
 	{
-		//Instantiate(projectile,transform.position,transform.rotation);
-		Instantiate(projectileInventoryItem.prefab,transform.position,transform.rotation);
+        //Instantiate(projectile,transform.position,transform.rotation);
+        Instantiate(projectileInventoryItem.prefab,transform.position,transform.rotation);
 		audioSource.Play ();
 	}
 

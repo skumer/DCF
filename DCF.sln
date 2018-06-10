@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DCF", "DCF.csproj", "{BD99081F-8D4C-B78D-F735-72E16F433771}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DCF.Editor", "DCF.Editor.csproj", "{EC834BD3-0985-AFF4-D20E-F041FA00A9EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD99081F-8D4C-B78D-F735-72E16F433771}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD99081F-8D4C-B78D-F735-72E16F433771}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD99081F-8D4C-B78D-F735-72E16F433771}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD99081F-8D4C-B78D-F735-72E16F433771}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC834BD3-0985-AFF4-D20E-F041FA00A9EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC834BD3-0985-AFF4-D20E-F041FA00A9EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC834BD3-0985-AFF4-D20E-F041FA00A9EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC834BD3-0985-AFF4-D20E-F041FA00A9EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
